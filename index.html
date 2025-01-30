@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Micheal Olowofela">
+    <meta name="description" content="A results summary component design.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Results Summary Component</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <article class="card__container">
+        <section class="card__container-results">
+            <h2 class="result__h2">Your Result</h2>
+
+            <div class="result__circle">
+                <div class="result__numerator">76</div>
+                <div class="result__denominator">of 100</div>
+            </div>
+
+            <section class="result__content">
+                <h1 class="content__title">Great</h1>
+                <p class="content__subtitle">Your performance exceed 65% of the people conducting the test here!</p>
+            </section>
+        </section>
+
+        <section class="card__container-summary">
+
+            <h2 class="summary-h2">Summary</h2>
+            
+            <section class="summary__result-container">
+                <div class="summary__reaction">
+                    <div class="summary__reaction-overlay"></div>
+    
+                        <div class="reaction">
+                            <figure>
+                                <img src="./images/icon-reaction.svg" alt="reaction icon" width="20" height="20" loading="lazy">
+                                <figcaption class="offscreen">Reaction Icon</figcaption>
+                            </figure>
+                            <p class="reaction__red">Reaction</p>
+                        </div>
+                        <div class="reaction__value">
+                            <span class="reaction__numerator">80</span>
+                            <span class="reaction__denominator">/ 100</span>
+                        </div>
+                    
+                </div>
+                
+                <div class="summary__memory">
+                    <div class="summary__memory-overlay"></div>
+    
+                        <div class="memory">
+                            <figure>
+                                <img src="./images/icon-memory.svg" alt="memory icon" width="20" height="20" loading="lazy">
+                                <figcaption class="offscreen">Memory Icon</figcaption>
+                            </figure>
+                            <p class="memory__yellow">Memory</p>
+                        </div>
+                        <div class="memory__value">
+                            <span class="numerator">92</span>
+                            <span class="denominator">/ 100</span>
+                        </div>
+                    
+                </div>
+    
+                <div class="summary__verbal">
+                    <div class="summary__verbal-overlay"></div>
+    
+                        <div class="verbal">
+                            <figure>
+                                <img src="./images/icon-verbal.svg" alt="verbal icon" width="20" height="20" loading="lazy">
+                                <figcaption class="offscreen">Verbal Icon</figcaption>
+                            </figure>
+                            <p class="verbal__green">Verbal</p>
+                        </div>
+                        <div class="verbal__value">
+                            <span class="numerator">61</span>
+                            <span class="denominator">/ 100</span>
+                        </div>
+                    
+                </div>
+    
+                <div class="summary__visual">
+                    <div class="summary__visual-overlay"></div>
+    
+                        <div class="visual">
+                            <figure>
+                                <img src="./images/icon-visual.svg" alt="visual icon" width="20" height="20" loading="lazy">
+                                <figcaption class="offscreen">Visual Icon</figcaption>
+                            </figure>
+                            <p class="visual__blue">Visual</p>
+                        </div>
+                        <div class="visual__value">
+                            <span class="numerator">73</span>
+                            <span class="denominator">/ 100</span>
+                        </div>
+                    
+                </div>
+            </section>
+    
+            <a href="#" class="card-summary__button center">Continue</a>
+        </section>
+    </article>
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* || REST */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --YELLOW: #FFB21E;
+  --BLUE: #1125D6;
+  --GREEN: #00BB8F;
+  --RED: #FF5555;
+  --DARK-NAVY: #303B59;
+  --LIGHT-BLUE: #CAC9FF;
+  --VERY-LIGHT-BLUE: #ECF2FF;
+  --WHITE: #FFF;
+  --WHITE-95: rgba(255, 255, 255, 0.95);
+
+  /* GRADIENTS */
+  --GRADIENT-1: linear-gradient(
+    to bottom,
+     #7755FF 0%,
+     #6943FF 0%,
+     #2F2CE9 100%);
+
+  --GRADIENT-2: linear-gradient(
+    to bottom,
+     #4D21C9 0%,
+     #2521C9 100%,
+     #2521C9 100%);
+
+  /* SHADOW */
+  --SHADOW: 0px 30px 60px 0px hsla(224, 83%, 58%, 0.15);
+
+  /* TYPOGRAPHY */
+--FF: "Hanken Grotesk", serif;
+
+  /* TEXT STYLING */
+  /* MOBILE */
+  --HEADING-XL-MOB: 800 3.5rem/3.5rem var(--FF);
+  --HEADING-L-MOB: bold 1.5rem var(--FF);
+  --HEADING-M-MOB: bold 1.125rem var(--FF);
+  --BODY-BOLD-MOB: bold 1rem var(--FF);
+  --BODY-MOB: normal 1rem var(--FF);
+
+  /* DESKTOP */
+  --HEADING-XL: 800 4.5rem/4.5rem var(--FF);
+  --HEADING-L: bold 2rem var(--FF);
+  --HEADING-M: bold 1.5rem var(--FF);
+  --BODY-BOLD: bold 1.125rem var(--FF);
+  --BODY: normal 1.125rem var(--FF);
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.responsive-image {
+  display: none;
+}
+
+/* MOBILE FIRST DESIGN */
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+a:any-link {
+  text-decoration: none;
+  color: black;
+}
+
+/* MOBILE */
+/* CARD */
+.card__container {
+  width: 100%;
+  min-height: auto;
+  background-color: var(--WHITE);
+}
+
+/* CARD RESULT */
+.card__container-results {
+  width: 100%;
+  min-height: 356px;
+  background-image: var(--GRADIENT-1);
+  border-radius: 0px 0px 32px 32px ;
+  padding: 1.5rem 3.5625rem 2.5rem 3.625rem;
+}
